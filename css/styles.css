@@ -117,6 +117,9 @@ nav, a {
     padding:0 2rem;
     text-align: justify;
 }
+.hello {
+    margin-top:1.2rem;
+}
 .grumpy {
     padding: 1.3rem;
     size:70%;
@@ -129,8 +132,8 @@ nav, a {
 .portfolio {
     background-color: white;
     width:98%;
-    height:600px;
-    margin:2.5rem auto;
+    height:67rem;
+    margin: auto;
 }
 
 .port2 {
@@ -152,21 +155,38 @@ nav, a {
     align-items:center;
     text-align: center;
     text-justify: justify;
-    padding:0 1rem;
-    border: solid red 1rem;
+    padding:1rem;
+    height:100%;
+    /* border: solid red .1rem; */
 }
 
-.marketing {
-    padding:1rem;
-    height:100%;
+
+
+/* SECOND ROW */
+
+.second-row {
+    display:flex;
+    padding:2rem;
 }
-.search {
+.map, .photo, .calculator, p {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    text-justify: justify;
     padding:1rem;
     height:100%;
-    
+    margin-top:-2rem;
+    /* border: solid red .1rem; */
 }
 
-.travel {
-    padding:1rem;
-    height:100%;
+/* FOOTER FOOTER FOOTER  */
+
+footer {
+    max-width:50%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin:2rem auto;
 }
