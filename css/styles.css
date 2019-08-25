@@ -47,7 +47,7 @@
             
             p {
             line-height: 1.5;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             padding-bottom: .25rem;
             font-weight:300;
             width:80%;
@@ -63,6 +63,9 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
+            /* margin-block-start: 0rem;
+            margin-block-end: 0rem;
+            padding-inline-start: 40px; */
             }
 
             .bg-color-gray {
@@ -71,15 +74,11 @@
 
   /* LINKS ================= */
 
-        a:link {
+        a:link, a:visited {
         text-decoration: none;
         font-family: 'Open Sans', sans-serif;
         font-weight:600;
         /* font-size: 1.1rem; */
-        color:#383838;
-        
-        }
-        a:visited {
         color:#383838;
         }
         a:hover {
@@ -93,16 +92,16 @@
 
     START OF PAGE CSS  */
 
-.branding {
+.name {
   text-align: center;
 }
 
-.branding a {
+.name a {
   display: block;
   padding: 1rem 0;
 }
 
-.branding h1 {
+.name h1 {
   margin: 0;
   font-size: 1.35rem;
 }
@@ -258,14 +257,13 @@ MEDIA QUERIES ===============================================
 
     header .navigation a {
         padding: .45rem 1.3rem;
-        background-color: transparent;
+        background-color: white;
         display: block;
-        background: white;
         flex-grow: 1;
         margin: 0 auto .1rem;
         text-align: center;
         text-decoration: none;
-        width:80%;
+        width:100%;
 }
 }
 
@@ -273,6 +271,7 @@ MEDIA QUERIES ===============================================
 
   header .container {
     flex-direction: column;
+    width:80%;
   }
 
   footer .navigation .tablet-and-desktop {
@@ -301,6 +300,7 @@ MEDIA QUERIES ===============================================
 
   #headline .container {
     flex-direction: row;
+    justify-content:space-around;
   }
 
   #headline .detail {
@@ -338,7 +338,6 @@ DESKTOP MEDIA QUERY ======================================
 
   footer .navigation .tablet-and-desktop {
     display: flex;
-    /* flex-wrap:wrap; */
   }
 
   footer .navigation .mobile {
@@ -355,7 +354,7 @@ DESKTOP MEDIA QUERY ======================================
   }
 
   header .navigation a {
-    padding: 1.45rem 1.3rem;
+    padding: 1.45rem 1rem;
     background-color: transparent;
   }
 
